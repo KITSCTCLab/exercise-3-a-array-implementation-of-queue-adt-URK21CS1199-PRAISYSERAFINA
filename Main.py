@@ -55,10 +55,10 @@ data = []
 for item in input().split(','):
     item = item.strip()
     if item == '-':
-        data.append([]
+        data.append([])
     else:
         data.append([int(item)])
-obj = MyCircularQueue(data[0][0])
+obj = MyCircularQueue(data)
 result = []
 for i in range(len(operations)):
     if i == 0:
